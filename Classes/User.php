@@ -18,7 +18,7 @@ class User{
         }
 
         $str = "SELECT * FROM tb_user WHERE username = ? and user_password = ?";
-        $stmt = mysqli_prepare($this->conn->getConnection (), $str);
+        $stmt = mysqli_prepare($this->conn->getConnection(), $str);
         mysqli_stmt_bind_param($stmt, "ss", $user, $password);
         mysqli_stmt_execute($stmt);
         $res = mysqli_stmt_get_result($stmt);

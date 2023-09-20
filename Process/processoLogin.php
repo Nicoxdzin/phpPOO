@@ -15,11 +15,11 @@
                 session_start();
                 $_SESSION['user'] = $_user;
                 $_SESSION['user-password'] = $_password;
-                header('location:../sistema.php');
+                header('location: ../sistema.php');
             }
             else
             {         
-                header('location:../index.php');     
+                header('location: ../index.php');     
             }  
         }
         else{
