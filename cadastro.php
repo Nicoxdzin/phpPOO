@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/index.css">
-    <title>Início</title>
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="Styles/style.css">
 </head>
 <body>
     <div class="container">
         <div class="login-form">
-            <form action="Process/processoLogin.php" method="POST">
+            <form  enctype="multipart/form-data" action="Process/processUserRegister.php" method="POST">
+                <div class="input-div">
+                    <label for="img">Imagem</label>
+                    <input class="form-input" type="file" name="img" accept="image/*" id="img">
+                </div>
                 <div class="input-div">
                     <label for="usuario">Usuário</label>
                     <input type="text" class="form-input" name="user" id="user">
